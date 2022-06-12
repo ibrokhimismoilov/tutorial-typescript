@@ -22,6 +22,7 @@ import { RandomNumber } from "./components/restriction/RandomNumber";
 import { Counter } from "./components/state/Counter";
 import { User } from "./components/state/User";
 import { Status } from "./components/Status";
+import { Toast } from "./components/templateLiteralas/Toast";
 
 function App() {
   const personName = {
@@ -113,6 +114,9 @@ function App() {
         <br />
         <br />
         <RandomNumber value={10} isPositive />
+        <br />
+        <br />
+        <Toast position={`center`} />
       </div>
     </ThemeContextProvider>
   );
