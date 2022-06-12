@@ -1,9 +1,4 @@
-type PersonTypes = {
-  name: {
-    first: string;
-    last: string;
-  };
-};
+import { PersonTypes } from "./Person.types";
 
 export const Person = (props: PersonTypes) => {
   return (
