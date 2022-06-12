@@ -12,6 +12,8 @@ import { List } from "./components/generic/List";
 import { ListObj } from "./components/generic/ListObj";
 import Greet from "./components/Greet";
 import { Heading } from "./components/Heading";
+import { CustomButton } from "./components/html/CustomButton";
+import { HtmlInput } from "./components/html/Htmlinput";
 import { Input } from "./components/Input";
 import { Oscar } from "./components/Oscar";
 import { Person } from "./components/Person";
@@ -117,6 +119,14 @@ function App() {
         <br />
         <br />
         <Toast position={`center`} />
+        <br />
+        <br />
+        <CustomButton variant="primary" onClick={() => console.log("Hello")}>
+          <div>Custom button</div>
+        </CustomButton>
+        <br />
+        <br />
+        <HtmlInput onChange={(e) => console.log(e.target.value)} />
       </div>
     </ThemeContextProvider>
   );
