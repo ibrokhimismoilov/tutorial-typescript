@@ -1,6 +1,6 @@
 import React from "react";
 
-type GreetTypes = {
+export type GreetTypes = {
   name: string;
   age?: number;
 };

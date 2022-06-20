@@ -13,11 +13,13 @@ import { ListObj } from "./components/generic/ListObj";
 import Greet from "./components/Greet";
 import { Heading } from "./components/Heading";
 import { CustomButton } from "./components/html/CustomButton";
+import { CustomComponent } from "./components/html/CustomComponent";
 import { HtmlInput } from "./components/html/Htmlinput";
 import { Input } from "./components/Input";
 import { Oscar } from "./components/Oscar";
 import { Person } from "./components/Person";
 import { PersonList } from "./components/PersonList";
+import { Text } from "./components/poliymorphic/Text";
 import { DomRef } from "./components/ref/DomRef";
 import MutableRef from "./components/ref/MutableRef";
 import { RandomNumber } from "./components/restriction/RandomNumber";
@@ -122,11 +124,26 @@ function App() {
         <br />
         <br />
         <CustomButton variant="primary" onClick={() => console.log("Hello")}>
-          <div>Custom button</div>
+          Custom button
         </CustomButton>
         <br />
         <br />
         <HtmlInput onChange={(e) => console.log(e.target.value)} />
+        <br />
+        <br />
+        <CustomComponent name={"Ibrokhim"} />
+        <br />
+        <br />
+        <Text as="h1" size="lg">
+          Heading
+        </Text>
+        <Text as="p" size="md">
+          Paragraph
+        </Text>
+        <Text as="label" htmlFor="someId" size="sm" color="secondary">
+          Label
+        </Text>
+        <input type="text" id="someId" />
       </div>
     </ThemeContextProvider>
   );
